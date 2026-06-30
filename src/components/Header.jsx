@@ -14,6 +14,7 @@ export function Header({ tone = 'light' }) {
     <nav className={open ? 'nav nav--open' : 'nav'}>
       <Link to="/menu" onClick={() => setOpen(false)}>Menu</Link>
       <Link to="/about" onClick={() => setOpen(false)}>Our story</Link>
+      <Link to="/case-study" onClick={() => setOpen(false)}>UX Case</Link>
       <a href="/#reserve" onClick={() => setOpen(false)}>Reservations</a>
     </nav>
     <Link to="/cart" className="cart-link" ariaLabel={`Cart with ${count} items`}>
